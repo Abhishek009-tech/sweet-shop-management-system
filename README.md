@@ -91,7 +91,7 @@ I used AI tools (primarily **ChatGPT**) as a development assistant during this p
 - Assisted in integrating Axios API calls with the backend.
 - Helped refine CSS styling and improve overall UI/UX consistency.
 
-**Backend (Limited Usage)**
+**Backend**
 - Used AI only for **reference and debugging guidance** related to:
   - JWT authentication error handling
   - Token expiry behavior and authorization flow
