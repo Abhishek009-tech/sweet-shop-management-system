@@ -72,6 +72,40 @@ The application allows users to browse sweets, purchase available items, and ena
 ### Admin Dashboard
 ![Admin Dashboard](screenshots/inventory-admin.png)
 
+---
+
+## My AI Usage
+
+I used AI tools (primarily **ChatGPT**) as a development assistant during this project, mainly to **speed up frontend development and debugging**, while I implemented and understood the backend logic independently.
+
+### Tools Used
+- ChatGPT
+
+### How I Used AI
+
+**Frontend (Primary Usage)**
+- Assisted in designing and refining the React UI layout (cards, filters, login/register screens).
+- Helped debug React-specific issues such as:
+  - `useEffect` dependency warnings (`react-hooks/exhaustive-deps`)
+  - Component structuring and state management improvements
+- Assisted in integrating Axios API calls with the backend.
+- Helped refine CSS styling and improve overall UI/UX consistency.
+
+**Backend (Limited Usage)**
+- Used AI only for **reference and debugging guidance** related to:
+  - JWT authentication error handling
+  - Token expiry behavior and authorization flow
+- All backend routes, controllers, models, and business logic were written and understood by me.
+
+### My Reflection on AI Usage
+
+AI helped me accelerate development and reduce time spent on repetitive debugging tasks, especially on the frontend.  
+However, I ensured that I fully understood every piece of code I integrated and made conscious design decisions myself.
+
+This approach allowed me to focus on **clean architecture, correctness, and maintainability**, while using AI responsibly as a productivity tool rather than a replacement for understanding.
+
+
+
 
 ## Project Structure
 
