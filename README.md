@@ -79,27 +79,49 @@ sweet-shop-management-system/
 │
 ├── sweet-shop-backend/
 │   ├── src/
-│   │   ├── config/          # Database configuration
-│   │   ├── controllers/     # Business logic (Auth & Sweets)
-│   │   ├── middleware/      # JWT & role authorization
-│   │   ├── models/          # Mongoose schemas
-│   │   ├── routes/          # API routes
-│   │   └── app.js
-│   ├── tests/               # Jest & Supertest test cases
-│   ├── server.js
+│   │   ├── config/
+│   │   │   └── db.js                # Database configuration
+│   │   ├── controllers/
+│   │   │   ├── authController.js    # Authentication logic
+│   │   │   └── sweetController.js   # Sweet inventory logic
+│   │   ├── middleware/
+│   │   │   └── authMiddleware.js    # JWT & role-based authorization
+│   │   ├── models/
+│   │   │   ├── User.js              # User schema
+│   │   │   └── Sweet.js             # Sweet schema
+│   │   ├── routes/
+│   │   │   ├── authRoutes.js        # Auth API routes
+│   │   │   └── sweetRoutes.js       # Sweet API routes
+│   │   └── app.js                   # Express app setup
+│   │
+│   ├── tests/
+│   │   ├── auth.test.js             # Auth API tests
+│   │   └── sweet.test.js            # Sweet API tests
+│   │
+│   ├── server.js                    # Server entry point
 │   ├── package.json
 │   └── .env
 │
 ├── sweet-shop-frontend/
 │   ├── public/
-│   │   ├── screenshots/     # Application screenshots
+│   │   ├── screenshots/             # Application screenshots
 │   │   └── index.html
+│   │
 │   ├── src/
-│   │   ├── api/             # Axios API layer
-│   │   ├── pages/           # React pages (Login, Register, Sweets)
-│   │   ├── utils/           # Auth helpers
+│   │   ├── api/
+│   │   │   └── api.js                # Axios API layer
+│   │   ├── pages/
+│   │   │   ├── Login.js
+│   │   │   ├── Register.js
+│   │   │   ├── Sweets.js
+│   │   │   └── AddSweet.js
+│   │   ├── utils/
+│   │   │   └── auth.js               # Auth helpers
 │   │   ├── App.js
-│   │   └── index.js
+│   │   ├── App.css
+│   │   ├── index.js
+│   │   └── styles.css
+│   │
 │   └── package.json
 │
 ├── .gitignore
