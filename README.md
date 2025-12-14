@@ -160,3 +160,28 @@ sweet-shop-management-system/
 │
 ├── .gitignore
 └── README.md
+
+## Testing
+
+Automated tests are implemented for backend APIs using Jest and Supertest.
+
+- Test cases cover authentication, inventory management, and authorization logic.
+### Test Report
+
+This project includes automated backend tests written using **Jest** and **Supertest**.
+
+### Test Framework
+- Jest
+- Supertest
+
+### Test Coverage
+- Authentication (register, login, JWT validation)
+- Sweet inventory APIs (CRUD operations, purchase flow)
+- Authorization checks (admin vs user)
+
+### How to Run Tests
+
+```bash
+cd sweet-shop-backend
+npm test
+
