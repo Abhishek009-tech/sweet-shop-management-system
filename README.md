@@ -54,5 +54,53 @@ The application allows users to browse sweets, purchase available items, and ena
 
 ---
 
+
+## Screenshots
+
+### Login Page
+![Login Page](screenshots/login.png)
+
+### Register Page
+![Register Page](screenshots/register.png)
+
+### User Inventory
+![User Inventory](screenshots/inventory-user.png)
+
+### Filters Feature
+![Filters Feature](screenshots/filters.png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/inventory-admin.png)
+
+
 ## Project Structure
 
+sweet-shop-management-system/
+│
+├── sweet-shop-backend/
+│   ├── src/
+│   │   ├── config/          # Database configuration
+│   │   ├── controllers/     # Business logic (Auth & Sweets)
+│   │   ├── middleware/      # JWT & role authorization
+│   │   ├── models/          # Mongoose schemas
+│   │   ├── routes/          # API routes
+│   │   └── app.js
+│   ├── tests/               # Jest & Supertest test cases
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+│
+├── sweet-shop-frontend/
+│   ├── public/
+│   │   ├── screenshots/     # Application screenshots
+│   │   └── index.html
+│   ├── src/
+│   │   ├── api/             # Axios API layer
+│   │   ├── pages/           # React pages (Login, Register, Sweets)
+│   │   ├── utils/           # Auth helpers
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
+│
+├── .gitignore
+└── README.md
